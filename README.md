@@ -1,6 +1,10 @@
 # MachineLearner
 To collect different machine learning algorithms here for future revision
 
+## Let's talk about Math
+- Maxium likelihood: just to get a best Θ which can `MAX P(X|Θ)`. 
+    - To do this we can the derivation of the function `P(X|Θ)`, usually `log` is a useful way to get rid of the exponential component for things like gaussian distribution.
+
 ## Clustering
 ### DBSCAN
 
