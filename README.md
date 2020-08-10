@@ -26,3 +26,14 @@ I learned test statistic from Partick anomaly detection course. At the beginning
 - examples: different variance
     - [7-2: 假设检验-page 12](http://staff.ustc.edu.cn/~zwp/teach/Prob-Stat/Lec17_slides.pdf)
     - [第 3 章 假设检验-例 3.8](https://bookdown.org/hezhijian/book/test.html#section-59)
+
+## Others
+This section will cover things I don't really understand and hopefully I can add as much as possible and fit them into normal sections
+***
+When I did my interview at Oxford University, they asked me some questions that I cannot answer. (which means that I still have too much to learn!)
+### VC dimention
+TODO: learn & update VC dimention part (due by: 15th Aug)
+### Autoencoder stuff
+TODO: add things
+
+
