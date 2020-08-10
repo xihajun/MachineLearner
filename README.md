@@ -16,3 +16,6 @@ To collect different machine learning algorithms here for future revision
  
 ## Test statistic
 I learned test statistic from Partick anomaly detection course. At the beginning, I have no idea what it is. Thanks to a course from Taiwai（劉惠美－數理統計學） which could be found [here](http://ctld.video.nccu.edu.tw/media/751).
+
+- rejection region
+ - issue #3: how to transfer the region to a probability
