@@ -19,3 +19,6 @@ I learned test statistic from Partick anomaly detection course. At the beginning
 
 - rejection region
  - issue #3: how to transfer the region to a probability
+- examples: different variance
+ - [7-2: 假设检验-page 12](http://staff.ustc.edu.cn/~zwp/teach/Prob-Stat/Lec17_slides.pdf)
+ - [第 3 章 假设检验-例 3.8](https://bookdown.org/hezhijian/book/test.html#section-59)
