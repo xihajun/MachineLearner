@@ -14,3 +14,5 @@ To collect different machine learning algorithms here for future revision
 
 - issue #1: tensorflow - fit for one sample always give me error?
  
+## Test statistic
+I learned test statistic from Partick anomaly detection course. At the beginning, I have no idea what it is. Thanks to a course from Taiwai（劉惠美－數理統計學） which could be found [here](http://ctld.video.nccu.edu.tw/media/751).
