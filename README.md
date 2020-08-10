@@ -11,4 +11,5 @@ To collect different machine learning algorithms here for future revision
 
 ### Neural Network
 
-- issue: tensorflow - fit for one sample always give me error?
+- issue #1: tensorflow - fit for one sample always give me error?
+ 
