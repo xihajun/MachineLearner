@@ -18,7 +18,7 @@ To collect different machine learning algorithms here for future revision
 I learned test statistic from Partick anomaly detection course. At the beginning, I have no idea what it is. Thanks to a course from Taiwai（劉惠美－數理統計學） which could be found [here](http://ctld.video.nccu.edu.tw/media/751).
 
 - rejection region
- - issue #3: how to transfer the region to a probability
+    - issue #3: how to transfer the region to a probability
 - examples: different variance
- - [7-2: 假设检验-page 12](http://staff.ustc.edu.cn/~zwp/teach/Prob-Stat/Lec17_slides.pdf)
- - [第 3 章 假设检验-例 3.8](https://bookdown.org/hezhijian/book/test.html#section-59)
+    - [7-2: 假设检验-page 12](http://staff.ustc.edu.cn/~zwp/teach/Prob-Stat/Lec17_slides.pdf)
+    - [第 3 章 假设检验-例 3.8](https://bookdown.org/hezhijian/book/test.html#section-59)
