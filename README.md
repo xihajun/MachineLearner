@@ -4,7 +4,11 @@ To collect different machine learning algorithms here for future revision
 ## Let's talk about Math
 - Maxium likelihood: just to get a best Θ which can `MAX P(X|Θ)`. 
     - To do this we can the derivation of the function `P(X|Θ)`, usually `log` is a useful way to get rid of the exponential component for things like gaussian distribution.
+## Probabilistic Graphical Model
+I've learnt that from [Carl's machine learning course](https://github.com/carlhenrikek/COMS30007) in 2018-2019. Just want to have a deep understanding now in 2020. It is easy to forget things if you don't use that. But I am still need to find a key that how to recap it quickly. (I reckon I should use emacs to edit those now)
 
+- paper to read - from Zhihu
+    - [An Introduction to Probabilistic Graphical Models](http://shivani-agarwal.net/Teaching/CIS-520/Fall-2017/Lectures/PGMs/chapter2.pdf)
 ## Clustering
 ### DBSCAN
 
@@ -32,7 +36,7 @@ This section will cover things I don't really understand and hopefully I can add
 ***
 When I did my interview at Oxford University, they asked me some questions that I cannot answer. (which means that I still have too much to learn!)
 ### VC dimention
-TODO: learn & update VC dimention part (due by: 15th Aug)
+TODO: learn & update VC dimention part (due by: 25th Aug)
 ### Autoencoder stuff
 TODO: add things
 
