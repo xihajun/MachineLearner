@@ -21,7 +21,12 @@ I've learnt that from [Carl's machine learning course](https://github.com/carlhe
 ### Neural Network
 
 - issue #1: tensorflow - fit for one sample always give me error?
- 
+
+## Point estimator
+- MME
+    - bias on (uniform distribution)
+
+- MLE
 ## Test statistic
 I learned test statistic from Partick's anomaly detection course[[notes](https://drive.google.com/drive/folders/0B9ODwgzxZIv8fjdpc1ozZXd5WTZObGYyeVV3d0JtYVdPSnJXamdJUWxQRklFMjJITVJUU1E?usp=sharing)]. At the beginning, I have no idea what it is. Thanks to a course from Taiwai（劉惠美－數理統計學）which could be found [here](http://ctld.video.nccu.edu.tw/media/751). 老师在第一节课中说统计中有两个概念：点估计和假设检验。
 
