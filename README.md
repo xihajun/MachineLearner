@@ -10,6 +10,9 @@ I've learnt that from [Carl's machine learning course](https://github.com/carlhe
 - paper to read - from Zhihu
     - [An Introduction to Probabilistic Graphical Models](http://shivani-agarwal.net/Teaching/CIS-520/Fall-2017/Lectures/PGMs/chapter2.pdf)
 ## Clustering
+### cluster quality
+- [issue #6](https://github.com/xihajun/MachineLearner/issues/6)
+
 ### DBSCAN
 
 - **keywords: core, border, outlier, eps, min_sample**
@@ -17,6 +20,8 @@ I've learnt that from [Carl's machine learning course](https://github.com/carlhe
 - Jupyter notebooks: [1](https://nbviewer.jupyter.org/github/papayawarrior/public_talks/blob/master/pydata_nyc_DeBaCl.ipynb), [2](https://nbviewer.jupyter.org/github/papayawarrior/public_talks/blob/master/pydata_nyc_dbscan.ipynb)
 - explained core label in DBSCAN algorithm
 - issue #2: dbscan result
+### KMeans & KNN
+I was really familiar with those two algorithms. But I need to do some revision now.
 
 ### Neural Network
 
