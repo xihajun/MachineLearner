@@ -50,4 +50,4 @@ TODO: learn & update VC dimention part (due by: 25th Aug)
 ### Autoencoder stuff
 TODO: add things
 
-
+<a href="https://badge.fury.io/gh/xihajun%2Fmachinelearner"><img src="https://badge.fury.io/gh/xihajun%2Fmachinelearner.svg" alt="GitHub version" height="18"></a>
