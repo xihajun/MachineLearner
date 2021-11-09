@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How-to guides &mdash; cobra 0.0.8 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Key points" href="../keypoints/keypoints.html" />
+    <link rel="prev" title="Installation" href="../tutorials/installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html"><img src="../_static/cobra.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/environment.html">Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How-to guides</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#setup">Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#main-modules">Main Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#test-cobra">Test COBRA</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#a-load-test-data">a) Load test data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#b-run-cobra-normally">b) Run cobra normally</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#c-generate-figures">c) Generate figures</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../keypoints/keypoints.html">Key points</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">cobra</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>How-to guides</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/guide/howto.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="how-to-guides">
+<span id="how-to"></span><h1>How-to guides<a class="headerlink" href="#how-to-guides" title="Permalink to this headline">¶</a></h1>
+<p>After building up the environment for COBRA from the <a class="reference internal" href="../tutorials/installation.html#installation"><span class="std std-ref">Installation</span></a>, this page will help you explore the abilities of COBRA, and guide you how to train this snake to do its jobs.</p>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<p>Before you start, please make sure you have all the required environment prepared. If you haven’t done so yet, please check those out!</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/environment.html#environment"><span class="std std-ref">Environment</span></a></p></li>
+<li><p><a class="reference internal" href="../tutorials/installation.html#installation"><span class="std std-ref">Installation</span></a></p></li>
+</ul>
+<div class="admonition-when-you-are-ready admonition">
+<p class="admonition-title">when you are ready</p>
+<p>Cool, now let us have a look what kind of abilities does this snake have.</p>
+</div>
+</div>
+<div class="section" id="main-modules">
+<h2>Main Modules<a class="headerlink" href="#main-modules" title="Permalink to this headline">¶</a></h2>
+<p>Before we start, let’s just quickly go through its main modules. Currently, COBRA contains three main modules:</p>
+<table class="colwidths-given docutils align-default" id="id1">
+<caption><span class="caption-text">COBRA main modules</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 18%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Inputs</p></th>
+<th class="head"><p>Outputs</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">cobra</span> <span class="pre">scorepeak</span></code></p></td>
+<td><p>narrowPeaks, custom PWM files</p></td>
+<td><p>csv file with binding confidence</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cobra</span> <span class="pre">find</span></code></p></td>
+<td><p>binding confidence, csv file with differential expression</p></td>
+<td><p>target genes with target probability</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">cobra</span> <span class="pre">plot</span></code></p></td>
+<td><p>outputs from previous steps, labels</p></td>
+<td><p>dotplots and other plots</p></td>
+</tr>
+</tbody>
+</table>
+<p><em>Note that: COBRA still have some other side abilities which would be introduced later. If you run</em> <code class="docutils literal notranslate"><span class="pre">cobra</span> <span class="pre">--help</span></code> <em>, you will get all the information you need.</em></p>
+<hr class="docutils" />
+<dl class="field-list">
+<dt class="field-odd">cobra scorepeak</dt>
+<dd class="field-odd"><p><a class="reference internal" href="scorepeaks.html#scorepeaks"><span class="std std-ref">cobra scorepeaks</span></a> <strong>is to calculate binding confidence for each gene given the ChIP-seq peakcalling.</strong> For example, let’s say you are interested in human STAT1 direct targets. You’ll need two inputs to run <code class="docutils literal notranslate"><span class="pre">cobra</span> <span class="pre">scorepeak</span></code>.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">narrowPeak_dir/</span></code>: a directory contains all the narrowPeak files <cite>(&gt;20 files)</cite></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stat1_human.meme`</span></code>: custom PWM file.</p></li>
+</ul>
+<p>Our current working folder structure shows below</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>users<span class="o">]</span>$ ls
+<span class="hll">narrowPeak_dir   stat1_human.meme
+</span></pre></div>
+</div>
+<p>If you have those two files prepared, you will be able to run <code class="docutils literal notranslate"><span class="pre">cobra</span> <span class="pre">scorepeak</span></code> now!</p>
+</dd>
+</dl>
+<div class="toggle docutils container">
+<div class="header docutils container">
+<p><strong>show an example of</strong> <code class="docutils literal notranslate"><span class="pre">cobra</span> <span class="pre">scorepeak</span></code></p>
+</div>
+<div class="highlight-sh notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span>cobra scorepeak --tf STAT1 -i narrowPeak_dir/ --meme stat1_human.meme --human --core <span class="m">8</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<details>
+<summary><a>Parameters of cobra scorepeaks</a></summary><table class="colwidths-given docutils align-default" id="id2">
+<caption><span class="caption-text">cobra scorepeaks cheating sheet</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 67%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameters</p></th>
+<th class="head"><p>Functions</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--tf</span></code></p></td>
+<td><p>TF of interest <em>(default: STAT1)</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-i</span></code></p></td>
+<td><p>input of narrowPeaks <em>(default: ./)</em></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--meme</span></code></p></td>
+<td><p>input of custom PWM files <em>(default: tf_speicies.meme)</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--human</span></code> or <code class="docutils literal notranslate"><span class="pre">--mouse</span></code></p></td>
+<td><p>given one to select speicies <em>(default: mouse)</em></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--core</span></code></p></td>
+<td><p>num of cores to use <em>(default:1)</em></p></td>
+</tr>
+</tbody>
+</table>
+</details><hr class="docutils" />
+<dl class="field-list simple">
+<dt class="field-odd">cobra find</dt>
+<dd class="field-odd"><p>This module is to find the TF direct target genes by given the binding scores for each gene plus differential expression analysis results. COBRA will require two inputs as well:</p>
+<ul class="simple">
+<li><p>csv file with binding confidence (<code class="docutils literal notranslate"><span class="pre">human_stat1.csv</span></code>)</p></li>
+<li><p>Differential expression analysis data (<code class="docutils literal notranslate"><span class="pre">rna_dir/</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+<div class="toggle docutils container">
+<div class="header docutils container">
+<p><strong>show an example of</strong> <code class="docutils literal notranslate"><span class="pre">cobra</span> <span class="pre">find</span></code></p>
+</div>
+<div class="highlight-sh notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span>cobra find --tf STAT1 -c chip-init-outs.csv -r rna_dir/ -o output_dir/
+</pre></div>
+</td></tr></table></div>
+</div>
+<details>
+<summary><a>Parameters of cobra find</a></summary><table class="colwidths-given docutils align-default" id="id3">
+<caption><span class="caption-text">cobra find</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 67%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameters</p></th>
+<th class="head"><p>Functions</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--tf</span></code></p></td>
+<td><p>TF of interest <em>(default: STAT1)</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-c</span></code></p></td>
+<td><p>csv files of chip confidence binging outputs <em>(default: ./)</em></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">-r</span></code></p></td>
+<td><p>input of differential expression data or directory.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-o</span></code></p></td>
+<td><p>output dir. If it is not exist, create one.</p></td>
+</tr>
+</tbody>
+</table>
+</details><hr class="docutils" />
+<dl class="field-list">
+<dt class="field-odd">cobra plot</dt>
+<dd class="field-odd"><p>The coolest ability that COBRA has is using <code class="docutils literal notranslate"><span class="pre">cobra</span> <span class="pre">plot</span></code> to draw some pretty images showing the TF binding status for every gene given the data. From those plots, bioloists would be able to discover some stories easier. You could set</p>
+<p>Here is the magic command to activate <code class="docutils literal notranslate"><span class="pre">cobra</span> <span class="pre">plot</span></code>.</p>
+</dd>
+</dl>
+<div class="toggle docutils container">
+<div class="header docutils container">
+<p><strong>show an example of</strong> <code class="docutils literal notranslate"><span class="pre">cobra</span> <span class="pre">plot</span></code></p>
+</div>
+<div class="highlight-sh notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span>cobra plot --tf STAT1 -s mouse --gene STAT1 STAT3 -i output-cobra-find/ -o img/ -t truth.pl
+</pre></div>
+</td></tr></table></div>
+</div>
+<details>
+<summary><a>Parameters of cobra plot</a></summary><table class="colwidths-given docutils align-default" id="id4">
+<caption><span class="caption-text">cobra plot</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 67%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameters</p></th>
+<th class="head"><p>Functions</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--tf</span></code></p></td>
+<td><p>TF of interest <em>(default: STAT1)</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-s</span></code></p></td>
+<td><p>species</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--gene</span></code></p></td>
+<td><p>list of genes of interest</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-i</span></code></p></td>
+<td><p>outputs of cobra find (target genes with probs)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">-o</span></code></p></td>
+<td><p>image outputs dir</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-t</span></code></p></td>
+<td><p>labels or targets (provided by users)</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<hr class="docutils" />
+<div class="section" id="test-cobra">
+<h2>Test COBRA<a class="headerlink" href="#test-cobra" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="a-load-test-data">
+<h3>a) Load test data<a class="headerlink" href="#a-load-test-data" title="Permalink to this headline">¶</a></h3>
+<p>For those new friends, you may not have your data prepared yet to train this snake.
+Don’t worry, in order to get familiar with users, COBRA itself have a test dataset in its pocket.
+All you need to do is to do ammunition loading using <code class="docutils literal notranslate"><span class="pre">cobra</span> <span class="pre">load</span></code> which will automatically load the ChIP-seq data into <code class="docutils literal notranslate"><span class="pre">./narrow/</span></code>, RNA-seq data into <code class="docutils literal notranslate"><span class="pre">./rna/</span></code>.
+Why not give it a trail now?</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># ammunition loading</span>
+cobra load
+</pre></div>
+</div>
+<p>If you check your folder with <code class="docutils literal notranslate"><span class="pre">ls</span></code>, you will find two folders -  <code class="docutils literal notranslate"><span class="pre">narrow</span></code> and <code class="docutils literal notranslate"><span class="pre">rna</span></code> from  your current working directory (please make sure that COBRA have the permission to <code class="docutils literal notranslate"><span class="pre">mkdir</span></code> in the current working directory). Also, if you want to load in other folders, you can simply use the parameter <code class="docutils literal notranslate"><span class="pre">--dir</span></code> or <code class="docutils literal notranslate"><span class="pre">-d</span></code> following by the folder you want. (COBRA documentation writor assume that you are lazy and will load test data in the current working directory.)</p>
+</div>
+<div class="section" id="b-run-cobra-normally">
+<h3>b) Run cobra normally<a class="headerlink" href="#b-run-cobra-normally" title="Permalink to this headline">¶</a></h3>
+<p>Once you have your test data prepared, you could simply run <code class="docutils literal notranslate"><span class="pre">cobra</span> <span class="pre">scorepeak</span></code> and <code class="docutils literal notranslate"><span class="pre">cobra</span> <span class="pre">find</span></code> step by step to get the results.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># this step would generate multiple files for future usage (by default --tf: STAT1)</span>
+cobra scorepeak -i narrow/ --meme stat1_human.meme --human --core <span class="m">8</span>
+
+<span class="c1">######### Done: after a few seconds #########</span>
+
+<span class="c1"># gives input files or folders and output folders (GMM model will be trained)</span>
+cobra find -c human_stat1_2000.csv -r rna/ -o output/
+
+<span class="c1">######### A few seconds later: you will find your results in output/ #########</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="c-generate-figures">
+<h3>c) Generate figures<a class="headerlink" href="#c-generate-figures" title="Permalink to this headline">¶</a></h3>
+<p>Let’s do some visualisation now. If you do <code class="docutils literal notranslate"><span class="pre">ls</span></code>, you will find there are a few files available now. You have <code class="docutils literal notranslate"><span class="pre">fimo.csv</span></code> which is a intermediate step of motif filtering.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../tutorials/installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../keypoints/keypoints.html" class="btn btn-neutral float-right" title="Key points" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Junfan Huang.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+ <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .header").show();
+        $(".toggle .header").click(function() {
+            $(this).parent().children().not(".header").toggle(400);
+            $(this).parent().children(".header").toggleClass("open");
+        })
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Environment &mdash; cobra 0.0.8 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Installation" href="installation.html" />
+    <link rel="prev" title="COBRA documentation" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html"><img src="../_static/cobra.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Environment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#docker">1.1 Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#build-your-own-environment">1.2 Build your own environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#other-softwares-dependencies">1.3 Other softwares dependencies</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#a-meme-suite">a) MEME-Suite</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#b-distribution-optimization">b) <strong>Distribution Optimization</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/howto.html">How-to guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../keypoints/keypoints.html">Key points</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">cobra</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Environment</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/tutorials/environment.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="environment">
+<span id="id1"></span><h1>Environment<a class="headerlink" href="#environment" title="Permalink to this headline">¶</a></h1>
+<p>COBRA is a terminal friendly snake. In order to setup a friendly environment, please be familiar with using terminal. Note that the command below are all based on terminal command.</p>
+<div class="section" id="docker">
+<h2>1.1 Docker<a class="headerlink" href="#docker" title="Permalink to this headline">¶</a></h2>
+<p>Docker container is a super handly tool which is able to provide a friendly environment for users. Once you have docer installed on you own machine. COBRA provides a <code class="docutils literal notranslate"><span class="pre">Dockerfile</span></code> to make life easier. What you need to do is just <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code> and use the <code class="docutils literal notranslate"><span class="pre">Dockerfile</span></code> we provided to setup a Docker environment for COBRA.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git clone cobra
+<span class="nb">cd</span> cobra
+docker build -t COBRA:1.0 .
+</pre></div>
+</div>
+<p>Note that <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">build</span></code> will help you to setup a vitual linux environment with all the software prepared.</p>
+</div>
+<div class="section" id="build-your-own-environment">
+<h2>1.2 Build your own environment<a class="headerlink" href="#build-your-own-environment" title="Permalink to this headline">¶</a></h2>
+<p>If you don’t like docker, and you want to see what kind of software COBRA required. Don’t worry, you can setup manually. <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span></code> would be a savior for python dependencies of COBRA once you have COBRA repo downloaded.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pip install -r requirements.txt
+python setup.py install
+</pre></div>
+</div>
+</div>
+<div class="section" id="other-softwares-dependencies">
+<h2>1.3 Other softwares dependencies<a class="headerlink" href="#other-softwares-dependencies" title="Permalink to this headline">¶</a></h2>
+<p>In order to enhance COBRA’s abilities, there’re few other softwares required to be installed before you take COBRA home.</p>
+<div class="section" id="a-meme-suite">
+<h3>a) MEME-Suite<a class="headerlink" href="#a-meme-suite" title="Permalink to this headline">¶</a></h3>
+<p>In order to reduce the noise level, we used FIMO in MEME-Suite to do motif filtering for COBRA.</p>
+<div class="toggle docutils container">
+<div class="header docutils container">
+<p><strong>Quick Install for meme-suite</strong></p>
+</div>
+<div class="highlight-sh notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span>tar zxf meme_4.11.4.tar.gz
+<span class="nb">cd</span> meme_4.11.4
+./configure --prefix<span class="o">=</span><span class="nv">$HOME</span>/meme --with-url<span class="o">=</span>http://meme-suite.org --enable-build-libxml2 --enable-build-libxslt
+make
+make <span class="nb">test</span>
+make install
+
+<span class="c1"># configureation</span>
+<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$HOME</span>/meme/bin:<span class="nv">$PATH</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>More details could be found <a class="reference external" href="http://web.mit.edu/meme_v4.11.4/share/doc/install.html">here</a>.</p>
+</div>
+<div class="section" id="b-distribution-optimization">
+<h3>b) <strong>Distribution Optimization</strong><a class="headerlink" href="#b-distribution-optimization" title="Permalink to this headline">¶</a></h3>
+<p>This is a R package embedded into COBRA, which provides COBRA a more powerful sense of RNA-seq touch. If you are interested in the package, please click <a class="reference external" href="https://cran.r-project.org/web/packages/DistributionOptimization/index.html">here</a>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="COBRA documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Junfan Huang.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+ <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .header").show();
+        $(".toggle .header").click(function() {
+            $(this).parent().children().not(".header").toggle(400);
+            $(this).parent().children(".header").toggleClass("open");
+        })
+    });
+</script>
+
+
+</body>
+</html>
