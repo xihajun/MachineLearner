@@ -1,6 +1,0 @@
-.. _scorepeaks:
-
-=================
-cobra scorepeaks
-=================
-
